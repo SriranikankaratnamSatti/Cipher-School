@@ -1,0 +1,78 @@
+Hypothesis Testing
+
+Definition:
+Hypothesis testing is a statistical method used to make decisions based on data from a sample. The goal is to determine whether there is enough evidence in the sample to infer that a certain condition is true for the entire population.
+
+Steps in Hypothesis Testing:
+1. State the Hypotheses:
+    Null Hypothesis (H₀): There is no effect or difference, and it represents a statement of "no change" or "no difference."
+    Alternative Hypothesis (H₁ or Ha): Contradicts the null hypothesis and represents a statement of "there is an effect" or "there is a difference."
+2. Choose a Significance Level (α): Typically 0.05.
+3. Collect Data and Compute a Test Statistic: Use appropriate statistical methods based on the type of data and hypothesis.
+4. Determine the P-value: The probability of obtaining test results at least as extreme as the observed results, assuming the null hypothesis is true.
+5. Make a Decision: Compare the P-value with the significance level to either reject or fail to reject the null hypothesis.
+
+
+Types of Tests:
+1. Z-test
+2. T-test
+3. ANOVA (Analysis of Variance)
+4. Chi-square Test
+
+
+Example Scenario:
+A basketball coach claims that his team scores more than 50 points on average per game over a season. We want to test this claim based on the scores from 5 randomly selected games.
+
+1. State the Hypotheses:
+    H₀: μ = 50
+    H₁: μ > 50
+2. Collect Data: Sample mean (51.2)
+3. Comparison: Compare the sample mean (51.2) with the hypothesized mean (50).
+4. Make a Decision: If the sample mean is significantly greater than the hypothesized mean, we lean towards rejecting the null hypothesis in favor of the alternative.
+
+Decision:
+In this simplified example, the sample mean of 51.2 is greater than 50. This suggests that the evidence supports the coach's claim that the team scores more than 50 points on average per game.
+
+Applications:
+1. A/B Testing (Marketing and Product Development):
+    Example: An e-commerce site tests two homepage designs (A and B) to see which leads to higher sales.
+    Hypotheses:
+        H₀: There is no difference in sales between the two designs.
+        H₁: Design B increases sales compared to Design A.
+2. Medicine and Healthcare:
+    Example: Testing a new drug to lower blood pressure.
+    Hypotheses:
+        H₀: The new drug has no effect on blood pressure.
+        H₁: The new drug has an effect on blood pressure.
+
+## Inferential Statistics
+
+Key Concepts:
+1. Population and Sample:
+    Population: The entire group that you want to draw conclusions about.
+    Sample: A subset of the population used to represent the entire group.
+
+Estimation:
+Point Estimation: Uses sample data to estimate an unknown population parameter (e.g., population mean or proportion).
+Interval Estimation (Confidence Intervals): Provides a range within which the parameter is expected to lie, with a certain degree of confidence (typically 95% or 99%).
+
+Common Point Estimators:
+Sample Mean (x̄): Estimator for the Population Mean (μ).
+Sample Proportion (p̂): Estimator for the Population Proportion (P).
+Sample Variance (s²): Estimator for the Population Variance (σ²).
+
+Example:
+If you have a sample of students' scores from a class test and calculate the average score, that average (sample mean) is a point estimate of the population mean score, assuming the sample is representative of the entire class.
+
+Components of Confidence Intervals:
+Confidence Level: Typically expressed as a percentage (e.g., 95% or 99%), indicating the probability that the confidence interval contains the true population parameter.
+Margin of Error: The range above and below the point estimate within which the actual parameter is expected to fall.
+
+
+Formula for Confidence Interval for a Population Mean:
+CI = x̄±(z.s/√n)
+where:
+x̄ is the sample mean.
+z is the z-score corresponding to the desired confidence level (e.g., 1.96 for 95% confidence).
+s is the sample standard deviation.
+n is the sample size.
