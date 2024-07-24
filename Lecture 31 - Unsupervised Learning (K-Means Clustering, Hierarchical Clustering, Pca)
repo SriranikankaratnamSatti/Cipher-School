@@ -1,0 +1,66 @@
+K-Means Clustering with Scikit-Learn
+K-Means Clustering:
+
+Goal: Partition the data into k clusters.
+Type: Unsupervised learning algorithm.
+Algorithm Type: Clustering.
+Characteristics: Centroid-based algorithm.
+Implementation in Python:
+Generating Data:
+
+Use make_blobs to generate synthetic data for clustering.
+Training the Model:
+
+Initialize and fit the K-Means model with the desired number of clusters.
+Predict the cluster labels for the data points.
+Plotting the Results:
+
+Scatter plot of the data points colored by their predicted cluster labels.
+Scatter plot of the cluster centers.
+python
+Copy code
+from sklearn.datasets import make_blobs
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+# Generating synthetic data
+X, y = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)
+
+# Training the K-Means model
+model = KMeans(n_clusters=4)
+y_pred = model.fit_predict(X)
+
+# Plotting the results
+plt.scatter(X[:, 0], X[:, 1], c=y_pred, cmap='rainbow')
+plt.scatter(model.cluster_centers_[:, 0], model.cluster_centers_[:, 1], s=300, c='black', marker='X')
+plt.title('K-Means Clustering')
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.show()
+Explanation:
+Data Generation:
+
+make_blobs: Generates synthetic data with specified number of samples and centers.
+Parameters:
+n_samples=300: Number of data points.
+centers=4: Number of clusters.
+cluster_std=0.60: Standard deviation of the clusters.
+random_state=0: Ensures reproducibility of the results.
+Model Training:
+
+KMeans(n_clusters=4): Initializes the K-Means model with 4 clusters.
+fit_predict(X): Fits the model to the data and predicts the cluster labels for each data point.
+Plotting:
+
+plt.scatter: Plots the data points.
+X[:, 0]: First feature.
+X[:, 1]: Second feature.
+c=y_pred: Colors the points based on their predicted cluster labels.
+cmap='rainbow': Color map for the clusters.
+plt.scatter (for cluster centers):
+model.cluster_centers_: Coordinates of the cluster centers.
+s=300: Size of the marker for cluster centers.
+c='black': Color of the marker.
+marker='X': Shape of the marker.
+Visual Output:
+The scatter plot will display the data points colored by their assigned clusters, with black 'X' markers indicating the centers of each cluster.
