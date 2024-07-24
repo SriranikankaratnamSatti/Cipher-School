@@ -1,0 +1,46 @@
+Introduction to Machine Learning
+
+What is AI?
+Definition: AI (Artificial Intelligence) is the simulation of human intelligence processes by machines.
+Alternate Definition: It is the ability of a computer to think and learn.
+
+Key Terms in AI:
+Learning: The ability of an AI system to improve its performance based on experience.
+Reasoning: The process of drawing logical conclusions from available information.
+Self-Correction: The ability of an AI system to automatically correct its errors.
+
+Types of AI:
+1. Weak AI (Narrow AI): AI systems that are designed and trained for a specific task.
+2. Strong AI (General AI): AI systems with generalized human cognitive abilities, capable of performing any intellectual task that a human can do.
+
+What is Machine Learning (ML)?
+Definition: Machine Learning is a subset of AI that uses statistical methods to enable machines to improve their performance with the amount of training data fed to them.
+Analogy: 
+  Human Learning: Observations --> Learning --> Skills
+  Machine Learning: Data --> Model/Predictor --> Predictions
+
+Types of Machine Learning:
+
+1. Supervised Learning:
+   Description: Uses labeled data to train the model.
+   Process: Labeled Data & Labels --> Machine --> ML Model --> Predictions --> Test Data
+
+2. Unsupervised Learning:
+   Description: Uses unlabeled data and identifies patterns within the data.
+   Process: Data --> Model --> Groups/Clusters
+   Clustering: Grouping similar instances based on patterns in the data.
+
+Examples:
+1. Supervised Learning: Email spam classification, cat-dog classification.
+2. Unsupervised Learning: Cat-dog clustering.
+3. Both Supervised and Unsupervised: Recommendation systems, playing the AlphaGo game.
+
+Evolution of AI, ML, and Deep Learning:
+Artificial Intelligence (1950s-1980s): Techniques enabling computers to mimic human behavior.
+Machine Learning (1980s-2010s): AI techniques that give computers the ability to learn without being explicitly programmed.
+Deep Learning (2010s onwards): A subset of ML making the computation of multi-layer neural networks feasible.
+
+What is Data Science?
+Definition: Data Science is a field of study that uses statistical tools and techniques to extract meaningful insights from data.
+Sources of Data: Databases, business transactions, sensors, and more.
+Techniques Used: Data science uses complex machine learning algorithms to build predictive models.
